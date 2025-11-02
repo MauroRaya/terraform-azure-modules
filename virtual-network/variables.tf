@@ -14,4 +14,5 @@ variable "subnets" {
     address_prefixes = list(string)
     security_group   = optional(string)
   }))
+  default = []
 }

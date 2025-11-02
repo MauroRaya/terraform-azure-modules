@@ -7,7 +7,7 @@
 | `resource_group_name`| The name of the resource group in which to deploy the virtual network.           | `string`                                                                                              | n/a     | Yes      |
 | `address_space`      | The address space used for the virtual network.                                  | `list(string)`                                                                                        | n/a     | Yes      |
 | `dns_servers`        | A list of DNS servers to use for this virtual network.                           | `list(string)`                                                                                        | `[]`    | No       |
-| `subnets`            | A list of subnet objects including name, address prefixes, and optional NSG.     | `list(object({ name = string, address_prefixes = list(string), security_group = optional(string) }))` | n/a     | Yes      |
+| `subnets`            | A list of subnet objects including name, address prefixes, and optional NSG.     | `list(object({ name = string, address_prefixes = list(string), security_group = optional(string) }))` | `[]`    | No       |
 
 ### Terragrunt Example
 
